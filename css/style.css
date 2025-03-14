@@ -1,0 +1,502 @@
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stacks the logo above the text */
+    align-items: center; /* Centers both the logo and text */
+    background-color: white; /* White background for the logo and title */
+    padding: 20px 0; /* Adds spacing above and below */
+}
+
+.logo {
+    border-radius: 30%; /* Keeps the logo round */
+    width: 400px; /* Adjusts logo size */
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Adds spacing between logo and title */
+}
+
+header {
+    text-align: center; /* Ensures everything inside the header is centered */
+}
+
+
+
+.intro {
+     background-color: #d4af37;
+     padding: 30px;
+}
+
+.icon-list {
+    display: flex; /* Aligns icons in a row */
+    justify-content: center; /* Centers content */
+    gap: 50px; /* Adds space between items */
+    margin-top: 20px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column; /* Stacks icon above text */
+    align-items: center; /* Centers content */
+    text-align: center;
+    max-width: 200px; /* Prevents content from stretching */
+}
+
+.icon-item i {
+    font-size: 50px; /* Adjust icon size */
+    color: #f4a42b; /* Icon color */
+    margin-top: 20px; /* Add more space above the icons */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.value-list {
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Centers content */
+    gap: 100px; /* Space between items */
+    margin-top: 40px; /* Adds space above the images */
+    padding-bottom: 50px;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center align */
+    text-align: center;
+    background: white; /* Box background */
+    padding: 5px; /* Adds space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    max-width: 500px; /* Keeps items at a good width */
+    font-size: 20px; /* Adjust font size */
+    font-weight: lighter;
+    text-align: center;
+    text-color: #d4af37; /* Ensures text is visible */
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    margin-top: 10px; /* Adjust spacing */
+    font-family: "Cinzel", serif;
+}
+
+.value-item img {
+    width: 300px; /* Make images fit the box */
+    height: auto;
+    border-radius: 8px; /* Softens the edges of the image */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+#about h2 {
+    font-size: 30px; /* Adjust font size */
+    font-weight: bold;
+    text-align: center;
+    text-color: #d4af37; /* Ensures text is visible */
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    margin-top: 10px; /* Adjust spacing */
+    font-family: "Cinzel", serif;
+}
+
+.white-box {
+    background: white; /* Box background */
+    padding: 5px; /* Adds space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.textgolden {
+    font-size: 20px; /* Adjust font size */
+    font-weight: lighter;
+    text-align: center;
+    text-color: #d4af37; /* Ensures text is visible */
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    margin-top: 10px; /* Adjust spacing */
+    font-family: "Cinzel", serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    color: #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.hero-title {
+    font-size: 50px; /* Adjust font size */
+    font-weight: lighter;
+    text-align: center;
+    color: #d4af37; /* Ensures text is visible */
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    margin-top: 10px; /* Adjust spacing */
+    font-family: "Cinzel", serif;
+    font-style: normal;
+    
+}
+
+
+#hero {
+    position: relative;
+    background: url('../photos/delivery2.jpg') no-repeat center 30%/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Keeps the dark filter */
+    z-index: 1;
+}
+
+#hero h2, #hero p, #hero .btn {
+    position: relative;
+    z-index: 2; /* Ensures text stays above the image */
+    color: white;
+}
+
+
+#about {
+    padding: 80px 20px; /* Increases top & bottom spacing */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the text block */
+    line-height: 1.8; /* Improves readability */
+}
+
+
+#about p {
+    font-size: 1.2em;
+    color: #444; /* Softer black for easier reading */
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#boxes {
+    background-color: #d4af37; /* Golden Yellow */
+    padding: 120px 5%; /* Increased padding on top */
+    text-align: center;
+}
+
+#boxes h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 40px; /* Adds space below the title */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    font-family: "Cinzel", serif;
+}
+
+
+
+
+
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: stretch; /* Ensures all boxes stretch to the same height */
+}
+
+.box {
+    background: white;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    width: 32%;
+    min-width: 280px;
+    height: 450px; /* Ensures equal height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background image should not be covered */
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%; /* Adjust the height of the image section */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Assign different background images */
+.box:nth-child(1)::before {
+    background-image: url('../photos/brain.jpg');
+}
+
+.box:nth-child(2)::before {
+    background-image: url('../photos/reading.jpg');
+}
+
+.box:nth-child(3)::before {
+    background-image: url('../photos/creative.jpg');
+}
+
+/* Ensure the text section is fully below the image */
+.box-content {
+    background: white;
+   padding-top: 10px;
+   padding-bottom: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Adds shadow so it stands out */
+    border-radius: 0 0 10px 10px; /* Keeps bottom corners rounded */
+}
+
+/* Title and text styling */
+.box-content h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.box-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+.box:hover {
+    transform: translateY(-5px); /* Adds hover effect */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.value-item:hover {
+    transform: translateY(-5px); /* Adds hover effect */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #FFC107;
+}
+
+.hover-text {
+    display: inline-block; /* Ensures it works correctly */
+    text-decoration: none; /* Removes underline */
+    color: white; /* Default color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.hover-text:hover {
+    transform: translateY(-3px); /* Moves text slightly up */
+    color: white; /* Ensures text stays visible */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds a soft shadow effect */
+}
+
+
+
+.subscription-section {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+
+}
+
+.subscription-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth */
+    font-family: "Cinzel", serif;
+    text-color: #f4a42b;
+
+}
+
+.subscription-section h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth */
+    font-family: "Arial", serif;
+    text-color: #f4a42b;
+
+}
+
+
+.subscription-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between plans */
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-5px); /* Adds hover effect */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plan i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.plan h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-section {
+    background: #d4af37; /* Golden gradient background */
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: "Cinzel", serif;
+}
+
+.contact-form {
+    max-width: 800px; /* Increase the width */
+    min-height: 200px; /* Ensure it covers the form properly */
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures it centers content inside */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    background: #FFD700;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #FFC107;
+}
+
+footer {
+    background-color: #d4af37; /* Golden background */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: black;
+}
+
+
